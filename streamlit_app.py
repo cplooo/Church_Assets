@@ -84,7 +84,7 @@ def show_item_locations_view(df):
            .groupby("物品名稱", dropna=False)
            .agg(儲存位置清單=("儲存位置", _unique_join),
                 位置數量=("儲存位置", lambda s: len(set([str(x).strip() for x in s if str(x).strip() != ""]))),
-                總筆數=("編號", "count"))
+                物品數量=("編號", "count"))
            .reset_index())
 
     # sort by item name (natural), then by location count desc
