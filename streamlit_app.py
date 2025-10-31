@@ -53,7 +53,7 @@ def show_location_view(df):
 
 def show_item_locations_view(df):
     with st.expander("說明", expanded=False):
-        st.write("此頁列出每一個 **物品名稱** 及其出現的所有 **儲存位置**。可用上方搜尋欄快速過濾。")
+        st.write("此頁列出每一個 **物品名稱** 及其出現的所有 **儲存位置**。可用下方搜尋欄快速過濾。")
 
     left, right = st.columns([2,1], gap="large")
     with left:
